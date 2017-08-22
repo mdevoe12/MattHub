@@ -7,6 +7,6 @@ feature "user sees account info" do
 
     visit dashboard_index_path
 
-    expect(page).to have_content("Nickname: #{user.nickname}")
+    expect(page).to have_content("#{user.nickname}")
   end
 end
