@@ -9,7 +9,7 @@ RSpec.feature "user logs in" do
     expect(page).to have_link("Login")
 
     click_link "Login"
-
+    
     expect(page).to have_content("Hello")
     expect(page).to have_content("Matt")
   end

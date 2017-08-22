@@ -1,8 +1,6 @@
 Hello <%= current_user.nickname %>
 
-
-<%= image_tag @user.avatar_url %>
-
+<%= image_tag current_user.image_url unless current_user.image_url.blank? %>
 
 <ul>
   <li>Followers:      <%= @user.followers %></li>
