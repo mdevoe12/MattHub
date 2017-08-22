@@ -8,5 +8,8 @@ feature "user sees account info" do
     visit dashboard_index_path
 
     expect(page).to have_content("#{user.nickname}")
+    expect(page).to have_content("Starred Repos: 3")
+    expect(page).to have_content("Followers: 0")
+    expect(page).to have_content("Following: 1")
   end
 end
