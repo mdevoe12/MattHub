@@ -5,7 +5,7 @@ RSpec.describe User, type: :model do
     auth = {
       "provider" => "github",
       "uid" => "12345678",
-      "uid" => {
+      "info" => {
         "email" => "matthew.devoe@gmail.com",
         "name" => "Matt",
         "nickname" => "Matt",
