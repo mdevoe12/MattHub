@@ -1,6 +1,43 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/dashboard_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/user.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -16,9 +53,52 @@
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/application_controller.rb": [
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0
       ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/application_helper.rb": [
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/dashboard_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/home_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/sessions_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -32,12 +112,11 @@
         0,
         0
       ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/application_record.rb": [
-        0,
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/nickname.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1503352572
+    "timestamp": 1503408690
   }
 }
