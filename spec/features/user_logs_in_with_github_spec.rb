@@ -24,7 +24,6 @@ RSpec.feature "user logs in" do
         email: "matthew.devoe@gmail.com",
         name: "Matt",
         nickname: "Matt",
-
       },
       credentials: {
         token: "12345abcdefghijklmnop"
