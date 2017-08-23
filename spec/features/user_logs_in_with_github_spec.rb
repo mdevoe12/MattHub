@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "user logs in" do
-  scenario "using github oauth" do
+  xscenario "using github oauth" do
     stub_omniauth
 
     visit root_path

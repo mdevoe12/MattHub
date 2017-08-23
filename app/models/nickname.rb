@@ -1,2 +1,0 @@
-class Nickname < ApplicationRecord
-end

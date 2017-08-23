@@ -12,5 +12,8 @@ class Person
     @starred = attributes[:starred].to_i
   end
 
+  def self.display_person(current_user)
+    Person.new(GithubService.personal_attrs(current_user))
+  end
 
 end
