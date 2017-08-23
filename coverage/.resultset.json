@@ -13,8 +13,42 @@
         1,
         null
       ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/repo_helper.rb": [
+        1,
+        null
+      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/sessions_helper.rb": [
         1,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/repo_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/user.rb": [
@@ -38,40 +72,11 @@
         1,
         null
       ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/dashboard_controller.rb": [
         1,
         null,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
@@ -109,6 +114,23 @@
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/repository.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        31,
+        1,
         null,
         null,
         null,
@@ -164,6 +186,6 @@
         0
       ]
     },
-    "timestamp": 1503517453
+    "timestamp": 1503520464
   }
 }
