@@ -14,7 +14,7 @@ RSpec.describe User, type: :model do
         "token" => "12345abcdefghijklmnop"
       }
     }
-
+  
     User.find_or_create_from_auth(auth)
     new_user = User.first
 

@@ -17,7 +17,8 @@
 /yarn-error.log
 
 .byebug_history
-coverage
+coverage/.resultset.json
+coverage/index.html
 
 # Ignore application configuration
 /config/application.yml
