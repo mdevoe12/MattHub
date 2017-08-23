@@ -17,8 +17,11 @@
 /yarn-error.log
 
 .byebug_history
-coverage/.resultset.json
-coverage/index.html
+
 
 # Ignore application configuration
 /config/application.yml
+
+/coverage/.resultset.json
+/coverage/index.html
+/spec/cassettes
