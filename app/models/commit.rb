@@ -1,13 +1,17 @@
 class Commit
 
-  attr_reader :commits
+  attr_reader :date,
+              :repo_name
 
-  def initialize(commits)
-    @commits = commits
+  def initialize(event = {})
+    @date = event[:commit][:author][:date]
+    @repo_name = event[:repository][:name]
   end
 
-  def self.display_commits(current_user)
-    Commit.new(GithubService.find_events(current_user))
+  def self.for_user(user)
+    GithubService.find_events(user).map do |raw_event|
+      Commit.new(raw_event)
+    end
   end
 
 end

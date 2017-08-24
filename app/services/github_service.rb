@@ -59,18 +59,15 @@ class GithubService
     }
   end
 
+  def find_events
+    response = get_url("/search/commits?q=author%3A#{@current_user.nickname}&sort=author-date")
+    JSON.parse(response.body, symbolize_names: true)[:items]
+  end
+
+  private
+
   def get_url(url)
     @conn.get(url)
-  end
-
-  def find_events
-    get_events_url("/search/commits?q=author%3A#{@current_user.nickname}&sort=author-date")
-  end
-
-  def get_events_url(url)
-    response = get_url(url)
-    results = JSON.parse(response.body, symbolize_names: true)
-    new_results = results[:items].map {|thing| {thing[:commit][:author][:date] => thing[:repository][:name]}}
   end
 
 end

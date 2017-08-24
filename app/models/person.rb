@@ -16,4 +16,21 @@ class Person
     Person.new(GithubService.personal_attrs(current_user))
   end
 
+  # def followers_count
+  #   # @followers ||= service.followers.map do |raw_follower|
+  #   #   Person.new(raw_follower)
+  #   # end
+  #
+  #   base_info[:followers]
+  # end
+  #
+  # private
+  #   def base_info
+  #     @base_info ||= service.base_info
+  #   end
+  #
+  #   def service
+  #     @service ||= GithubService
+  #   end
+
 end

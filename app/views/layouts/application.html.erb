@@ -21,7 +21,16 @@
         <%= link_to "MattHub", root_path, class: "navbar-brand" %>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user == nil %>
+          <li class="nav-item active">
+            <%= link_to "Login", github_login_path %>
+          </li>
+          <% else %>
+          <li class="navbar-text">
+            <%= current_user.nickname %>
+          </li>
+          <% end %>
         </ul>
       </div>
     </nav>
