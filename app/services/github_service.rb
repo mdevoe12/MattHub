@@ -25,6 +25,15 @@ class GithubService
     new(current_user).find_events
   end
 
+  def self.find_following_events(current_user)
+    new(current_user).find_following_events
+  end
+
+  def find_following_events
+    response = get_url("/users/#{@current_user.nickname}/received_events")
+    JSON.parse(response.body)
+  end
+
   def find_info
     base_info = get_url("/users/#{@current_user.nickname}")
     starred   = get_url("/users/#{@current_user.nickname}/starred")

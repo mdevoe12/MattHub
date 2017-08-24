@@ -37,6 +37,7 @@ gem 'omniauth-github'
 gem 'figaro'
 gem 'bootstrap-sass'
 gem 'awesome_print'
+gem 'pry'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

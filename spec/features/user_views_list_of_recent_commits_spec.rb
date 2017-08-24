@@ -7,7 +7,7 @@ feature 'user sees' do
 
     VCR.use_cassette("features/user_views_list_of_recent_commits_spec.rb") do
       visit commit_index_path
-    save_and_open_page
+    
       expect(page).to have_content("#{user.nickname}'s Recent Commits")
     end
   end
