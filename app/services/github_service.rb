@@ -28,6 +28,16 @@ class GithubService
     new(current_user).find_orgs
   end
 
+  def self.find_repos(current_user)
+    new(current_user).find_repos
+  end
+
+  def find_repos
+    response = get_url("/users/#{current_user.nickname}/repos")
+    repos = JSON.parse(response.body)
+    names = repos.map { |repo| repo['name'] }
+  end
+
   def find_orgs
     response = get_url("/users/#{current_user.nickname}/orgs")
     JSON.parse(response.body)

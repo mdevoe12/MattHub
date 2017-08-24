@@ -6,9 +6,8 @@ class Repository
     @names = names
   end
 
-  def self.create_repos(repos)
-    names = repos.map { |repo| repo['name'] }
-    Repository.new(names)
+  def self.create_repos(current_user)
+    Repository.new(GithubService.find_repos(current_user))
   end
 
 end
