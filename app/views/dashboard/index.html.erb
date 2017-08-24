@@ -1,9 +1,12 @@
-Hello <%= current_user.nickname %>
 
-<%= image_tag current_user.image_url unless current_user.image_url.blank? %>
+  <div class="col-xs-3">
+      <%= image_tag current_user.image_url, :class => "img-thumbnail" %>
+  </div>
 
-<ul>
-  <li>Followers:      <%= @person.followers %></li>
-  <li>Following:      <%= @person.following %></li>
-  <li>Starred Repos:  <%= @person.starred %></li>
-</ul>
+  <div class="col-xs-3">
+    <ul>
+      <li>Followers:      <%= @person.followers %></li>
+      <li>Following:      <%= @person.following %></li>
+      <li>Starred Repos:  <%= @person.starred %></li>
+    </ul>
+  </div>
