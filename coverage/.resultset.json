@@ -5,6 +5,10 @@
         1,
         null
       ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/commit_helper.rb": [
+        1,
+        null
+      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/dashboard_helper.rb": [
         1,
         null
@@ -21,18 +25,25 @@
         1,
         null
       ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/repo_controller.rb": [
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/user.rb": [
         1,
         null,
         1,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/application_record.rb": [
         1,
-        null,
         1,
-        null,
-        1,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/application_controller.rb": [
@@ -51,47 +62,21 @@
         null,
         null
       ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/user.rb": [
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/commit_controller.rb": [
         1,
         null,
         1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/dashboard_controller.rb": [
-        1,
-        null,
         1,
         1,
         null,
         null,
         null
       ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/person.rb": [
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/commit.rb": [
         1,
         null,
         1,
         null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
         1,
         1,
         null,
@@ -106,32 +91,53 @@
         1,
         null,
         1,
+        null,
+        null,
+        null,
         1,
         1,
-        null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/repository.rb": [
         1,
-        null,
         1,
         null,
         1,
         1,
+        1,
+        1,
+        null,
         null,
         null,
         1,
-        31,
+        0,
+        null,
+        null,
+        1,
         1,
         null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        101,
         null,
         null,
         null
@@ -148,11 +154,33 @@
         0,
         0
       ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/dashboard_controller.rb": [
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0
+      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/home_controller.rb": [
         0,
         null,
         0,
         null,
+        0,
+        null,
+        0
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/repo_controller.rb": [
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
         0,
         null,
         0
@@ -184,8 +212,45 @@
         0,
         0,
         0
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/person.rb": [
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/models/repository.rb": [
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0
       ]
     },
-    "timestamp": 1503520464
+    "timestamp": 1503591184
   }
 }
