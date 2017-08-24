@@ -86,3 +86,20 @@ def stub_omniauth
     }
     })
 end
+
+def bad_stub_omniauth
+  OmniAuth.config.test_mode = true
+
+  OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
+    provider: "notgithub",
+    uid: "12345678",
+    info: {
+      email: "matthew.devoe@gmail.com",
+      name: "Matt",
+      nickname: "Matt",
+    },
+    credentials: {
+      token: "12345abcdefghijklmnop"
+    }
+    })
+end
