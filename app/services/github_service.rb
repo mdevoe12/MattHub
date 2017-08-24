@@ -37,7 +37,7 @@ class GithubService
   end
 
   def self.find_events(user)
-    new(user).find_events
+    new(current_user).find_events
   end
 
   def find_events
