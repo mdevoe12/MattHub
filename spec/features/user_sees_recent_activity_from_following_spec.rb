@@ -9,6 +9,8 @@ feature 'user sees' do
       visit  following_index_path
 
       expect(page).to have_content("People you follow's recent activity")
+      expect(page).to have_content("MikelSage")
+      expect(page).to have_content("scoots_shop")
     end
   end
 end

@@ -1,1 +1,7 @@
 <h1>People you follow's recent activity</h1>
+
+<% @followings.events.each do |event| %>
+  <ul>
+    <li><%= event['actor']['login'] %>: <%= event['type'] %> - <%= event['repo']['name'] %></li>
+  </ul>
+<% end %>
