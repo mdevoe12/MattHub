@@ -10,7 +10,4 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destroy
-    byebug
-  end
 end
