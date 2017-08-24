@@ -29,7 +29,7 @@ class GithubService
     new(current_user).find_following_events
   end
 
-  def self.find_orgs
+  def self.find_orgs(current_user)
     new(current_user).find_orgs
   end
 
