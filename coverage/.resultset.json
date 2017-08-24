@@ -73,10 +73,6 @@
         3,
         null,
         null,
-        1,
-        0,
-        null,
-        null,
         null
       ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/sessions_controller.rb": [
@@ -133,9 +129,9 @@
         null,
         1,
         5,
-        5,
-        5,
-        5,
+        null,
+        null,
+        null,
         null,
         5,
         5,
@@ -182,7 +178,7 @@
         null,
         null,
         1,
-        6,
+        7,
         null,
         null,
         1,
@@ -321,6 +317,6 @@
         0
       ]
     },
-    "timestamp": 1503602383
+    "timestamp": 1503604259
   }
 }

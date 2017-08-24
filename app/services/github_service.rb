@@ -1,16 +1,11 @@
 class GithubService
 
   attr_reader :current_user,
-              :conn,
-              :events_conn
+              :conn
 
   def initialize(current_user)
     @current_user = current_user
     @conn = Faraday.new(url: "https://api.github.com") do |faraday|
-      faraday.authorization :Token, @current_user.token
-      faraday.adapter Faraday.default_adapter
-    end
-    @events_conn = Faraday.new(url: "https://api.github.com") do |faraday|
       faraday.authorization :Token, @current_user.token
       faraday.headers["Accept"] = "application/vnd.github.cloak-preview"
       faraday.adapter Faraday.default_adapter
@@ -63,7 +58,7 @@ class GithubService
   end
 
   def get_events_url(url)
-    response = @events_conn.get(url)
+    response = get_url(url)
     results = JSON.parse(response.body, symbolize_names: true)
     new_results = results[:items].map {|thing| {thing[:commit][:author][:date] => thing[:repository][:name]}}
   end
