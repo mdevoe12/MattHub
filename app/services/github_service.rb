@@ -1,8 +1,8 @@
 class GithubService
 
-  attr_reader :@current_user,
-              :@conn,
-              :@events_conn
+  attr_reader :current_user,
+              :conn,
+              :events_conn
 
   def initialize(current_user)
     @current_user = current_user
@@ -21,6 +21,10 @@ class GithubService
     new(current_user).find_info
   end
 
+  def self.find_events(current_user)
+    new(current_user).find_events
+  end
+
   def find_info
     base_info = get_url("/users/#{@current_user.nickname}")
     starred   = get_url("/users/#{@current_user.nickname}/starred")
@@ -36,21 +40,14 @@ class GithubService
     @conn.get(url)
   end
 
-  def self.find_events(user)
-    new(current_user).find_events
-  end
-
   def find_events
-    get_events_url("/search/commits?q=author%3A#{@current_user.nickname}&sort=author-date&per_page=800")
+    get_events_url("/search/commits?q=author%3A#{@current_user.nickname}&sort=author-date")
   end
 
   def get_events_url(url)
     response = @events_conn.get(url)
     results = JSON.parse(response.body, symbolize_names: true)
-    new_results = []
-    results[:items].each {|thing| new_results << {thing[:commit][:author][:date] => thing[:repository][:name]}}
-    new_results
-    byebug
+    new_results = results[:items].map {|thing| {thing[:commit][:author][:date] => thing[:repository][:name]}}
   end
 
 end
