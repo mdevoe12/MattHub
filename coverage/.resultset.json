@@ -13,6 +13,10 @@
         1,
         null
       ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/following_helper.rb": [
+        1,
+        null
+      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/home_helper.rb": [
         1,
         null
@@ -58,6 +62,15 @@
         null,
         1,
         0,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/following_controller.rb": [
+        1,
+        null,
+        1,
+        null,
         null,
         null,
         null
@@ -250,6 +263,6 @@
         0
       ]
     },
-    "timestamp": 1503595490
+    "timestamp": 1503595620
   }
 }

@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :dashboard, only: [:index]
   resources :repo, only: [:index]
   resources :commit, only: [:index]
+  resources :following, only: [:index]
 end
