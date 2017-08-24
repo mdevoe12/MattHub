@@ -9,7 +9,6 @@ feature 'user sees' do
       visit orgs_path
 
       expect(page).to have_content("#{user.nickname}'s Organizations")
-
     end
   end
 end
