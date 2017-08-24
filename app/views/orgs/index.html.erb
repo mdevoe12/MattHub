@@ -1,0 +1,7 @@
+<h1><%= current_user.nickname %>'s Organizations</h1>
+
+<% @orgs.orgs.each do |org| %>
+  <ul>
+    <li><%= org %></li>
+  </ul>
+<% end %>

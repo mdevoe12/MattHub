@@ -1,0 +1,9 @@
+Hello <%= current_user.nickname %>
+
+<%= image_tag current_user.image_url unless current_user.image_url.blank? %>
+
+<ul>
+  <li>Followers:      <%= @person.followers %></li>
+  <li>Following:      <%= @person.following %></li>
+  <li>Starred Repos:  <%= @person.starred %></li>
+</ul>

@@ -1,0 +1,8 @@
+<h1><%= current_user.nickname %>'s Repos</h1>
+
+<% @repos.names.each do |repo| %>
+  <ul>
+    <li><%= repo %></li>
+  </ul>
+
+<% end %>
