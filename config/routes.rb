@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :repo, only: [:index]
   resources :commit, only: [:index]
   resources :following, only: [:index]
+  resources :orgs, only: [:index]
 end
