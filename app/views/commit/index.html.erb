@@ -7,10 +7,10 @@
         <th scope = "col">Date</th>
       </tr>
     </thead>
-    <% @commits.commits.each do |commit| %>
+    <% @commits.each do |commit| %>
       <tr>
-        <td><%= commit.values[0] %></td>
-        <td><%= commit.keys[0].to_date %></td>
+        <td><%= commit.repo_name %></td>
+        <td><%= commit.date %></td>
       </tr>
     <% end %>
   </table>
