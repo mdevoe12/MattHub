@@ -21,6 +21,10 @@
         1,
         null
       ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/orgs_helper.rb": [
+        1,
+        null
+      ],
       "/Users/matthewdevoe/turing/3module/projects/MattHub/app/helpers/repo_helper.rb": [
         1,
         null
@@ -62,6 +66,14 @@
         null,
         1,
         0,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/3module/projects/MattHub/app/controllers/orgs_controller.rb": [
+        1,
+        null,
+        1,
         null,
         null,
         null
@@ -287,6 +299,6 @@
         0
       ]
     },
-    "timestamp": 1503597240
+    "timestamp": 1503597418
   }
 }

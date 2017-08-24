@@ -8,7 +8,7 @@ feature 'user sees' do
     VCR.use_cassette("features/user_views_list_of_orgs_spec.rb") do
       visit orgs_path
 
-      expect(page).to have_content("#{user.username}'s Organizations")
+      expect(page).to have_content("#{user.nickname}'s Organizations")
 
     end
   end
